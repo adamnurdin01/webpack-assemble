@@ -1,0 +1,8 @@
+{
+    "coba": "Adam soraya",
+    "people": [
+        {"firstName": "Asep", "lastName": "Sunandar"},
+        {"firstName": "Dadan", "lastName": "Sunandar"},
+        {"firstName": "Jujun", "lastName": "Junaedi"}
+    ]
+}
