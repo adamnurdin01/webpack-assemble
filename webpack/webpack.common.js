@@ -33,7 +33,8 @@ module.exports = {
 		...pages.map(function(x){
 			return new HtmlWebpackPlugin({
 				template: Path.resolve(__dirname, '../src/html/pages/'+ x +'.hbs'),
-				filename: x + '.html'
+				filename: x + '.html',
+				minify: false
 			})
 		})
 		
