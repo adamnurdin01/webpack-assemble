@@ -1,8 +1,3 @@
-# Webpack Assemble Starter Kit
-
-Customize from [wbkd](https://github.com/wbkd/webpack-starter) and [assemble-webpack-loader](https://github.com/conechan/assemble-webpack-loader) 
-
-
 ### Installation
 
 ```
@@ -33,8 +28,3 @@ When you run `npm run build` we use the [mini-css-extract-plugin](https://github
 ### How to add pages:
 * Add hbs file in "src/html/pages/pagename.hbs"
 * Add json file in "src/json/pagename.json"
-
-
-### Credit:
-* Webpack Starter Kit [wbkd](https://github.com/wbkd/webpack-starter)
-* Webpack Assemble [assemble-webpack-loader](https://github.com/conechan/assemble-webpack-loader)
