@@ -2,12 +2,19 @@ const Path = require('path');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const fs = require('fs');
+const pages = [];
+const jsonData = {};
+const files = fs.readdirSync('./src/html/pages/');
 
-var pages = ['index','about'];
+files.map((x)=>{
+	pages.push(x.replace('.hbs',''));
+});
 
-var jsonData = {};
 pages.map(function(x){
-	jsonData[x] = require('../src/json/'+ x +'.json')
+	try{
+		jsonData[x] = require('../src/json/'+ x +'.json')
+	}catch(err){}
 });
 
 module.exports = {
@@ -37,7 +44,6 @@ module.exports = {
 				minify: false
 			})
 		})
-		
 	],
 	resolve: {
 		alias: {

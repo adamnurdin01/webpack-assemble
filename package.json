@@ -6,10 +6,6 @@
     "build": "webpack --config webpack/webpack.config.prod.js  --colors",
     "start": "webpack-dev-server --open --config webpack/webpack.config.dev.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/wbkd/webpack-starter.git"
-  },
   "keywords": [
     "webpack",
     "startkit",
@@ -18,11 +14,6 @@
     "javascript",
     "webdev"
   ],
-  "author": "webkid.io",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/wbkd/webpack-starter/issues"
-  },
   "devDependencies": {
     "@babel/core": "^7.1.2",
     "@babel/plugin-proposal-class-properties": "^7.1.0",
@@ -49,6 +40,7 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.0.0",
+    "bootstrap-scss": "^4.4.1",
     "lodash": "^4.17.11"
   }
 }

@@ -1,5 +1,23 @@
-$body-color: red;
+/*
+Utilities
+=========================== */ 
+@import './css3-mixins';
 
-body {
-  color: $body-color;
+.panel-shadow{
+    @include box-shadow(0,0,20px,0,rgba(62,28,131,0.1));
 }
+
+/*
+Variable 
+=========================== */ 
+@import './variable';
+
+/*
+Dependencies 
+=========================== */ 
+@import '~bootstrap-scss/bootstrap';
+
+/*
+Assets
+=========================== */ 
+@import './typography';

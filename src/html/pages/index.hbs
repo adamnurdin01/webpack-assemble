@@ -5,14 +5,20 @@ keywords: index
 description: index
 ---
 
-<div id="app"></div>
-<!-- Start People -->
-{{#each index.people}}{{firstName}} {{lastName}}{{/each}}
-<!-- End People -->
-<hr />
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-{{index.coba}}
+<div class="container">
+    <div id="app"></div>
+    <!-- Start People -->
+    {{#each index.people}}
+        <div>{{firstName}} {{lastName}}</div>
+    {{/each}}
+    <!-- End People -->
+    <hr />
+    
+    <button class="btn btn-primary">asdad</button>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    {{index.coba}}
+</div>
